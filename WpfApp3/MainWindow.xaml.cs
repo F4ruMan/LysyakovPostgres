@@ -33,7 +33,7 @@ namespace WpfApp3
             using ( var connection = new NpgsqlConnection(App.conn))
             {
                 connection.Open();
-                string com = $"select pass from users where username = '{tblog.Text}'";
+                string com = $"select pass, dolznost from users where username = '{tblog.Text}'";
                 using (var comm = new NpgsqlCommand(com,connection))
                 {
                     using (var reader = comm.ExecuteReader())
@@ -42,6 +42,7 @@ namespace WpfApp3
                         string pas = reader.GetString(0);
                         if (pas == tbpass.Text)
                         {
+                            App.user=reader.GetString(1);
                             Window1 window1 = new Window1();
                             window1.ShowDialog();
                             this.Close();

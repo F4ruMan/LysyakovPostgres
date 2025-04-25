@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox Name="tblog" HorizontalAlignment="Left" Margin="405,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="tbpass" HorizontalAlignment="Left" Margin="405,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="tblog" HorizontalAlignment="Left" Margin="405,151,0,0" TextWrapping="Wrap" Text="testuser" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="tbpass" HorizontalAlignment="Left" Margin="405,182,0,0" TextWrapping="Wrap" Text="123" VerticalAlignment="Top" Width="120"/>
         <Label Content="Логин" HorizontalAlignment="Left" Margin="362,147,0,0" VerticalAlignment="Top"/>
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="349,178,0,0" VerticalAlignment="Top"/>
         <Button Name="btnLogIn" Content="Вход" HorizontalAlignment="Left" Margin="405,217,0,0" VerticalAlignment="Top" Click="btnLogIn_Click"/>
